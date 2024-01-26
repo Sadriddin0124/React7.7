@@ -31,7 +31,6 @@ const tasksSlice = createSlice({
         updateTask(state, action){
             const {id, title, category} = action.payload
             let single_task = state.tasks.find((item)=> item.id === id)
-            console.log(single_task);
             single_task.title = title
             single_task.category = category
         }
